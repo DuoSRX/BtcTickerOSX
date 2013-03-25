@@ -32,7 +32,7 @@
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
-		<string>aos.default</string>
+		<string>localhost.default</string>
 		<key>Path</key>
 		<string>mtgoxticker</string>
 		<key>SavePath</key>
@@ -40,7 +40,7 @@
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
-		<string>web.me.com</string>
+		<string>MacBook-Pro-de-Xavier.local</string>
 	</dict>
 	<key>Design time language</key>
 	<string>fr.lproj</string>
@@ -55,11 +55,11 @@
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>126 76 1004 679 0 0 1280 778 </string>
+	<string>199 153 1004 679 0 0 1440 878 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
-		<integer>9</integer>
+		<integer>5</integer>
 		<key>SplitViewConfig</key>
 		<integer>3</integer>
 		<key>_indexOfCollapsedView</key>
