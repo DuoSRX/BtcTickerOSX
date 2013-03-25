@@ -4,7 +4,7 @@
  according to the license.txt file included in the project.
  */
 
-var tickerUrl = "http://mtgox.com/code/data/ticker.php";
+var tickerUrl = "http://data.mtgox.com/code/data/ticker.php";
 var tickerRequest = null;
 var tickerValues = {
     high: 0,
