@@ -7,4 +7,4 @@ BtcTickerOSX is a simple OSX dashboard widget that displays the MtGox prices.
 
 ## Installation
 
-Download the zip version, and double click the wdgtuser file to install it in your dashboard.
+Download the zip version, and double click the .wdgt file to install it in your dashboard.
