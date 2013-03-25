@@ -12,7 +12,7 @@
 		<string>-refreshTickerValues</string>
 	</dict>
 	<key>CYLastWindowPosition</key>
-	<string>{764, 279}</string>
+	<string>{-250, -519}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -23,12 +23,12 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {759, 209}}</string>
-			<string>{{0, 219}, {759, 418}}</string>
+			<string>{{0, 0}, {851, 373}}</string>
+			<string>{{0, 383}, {851, 317}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>5</integer>
+	<integer>0</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
@@ -50,12 +50,12 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {244, 658}}</string>
-			<string>{{245, 0}, {760, 658}}</string>
+			<string>{{0, 0}, {244, 721}}</string>
+			<string>{{245, 0}, {852, 721}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>199 153 1004 679 0 0 1440 878 </string>
+	<string>199 90 1096 742 0 0 1440 878 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -66,8 +66,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 273}}</string>
-			<string>{{0, 283}, {246, 354}}</string>
+			<string>{{0, 0}, {246, 300.5}}</string>
+			<string>{{0, 310.5}, {246, 389.5}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>
@@ -87,18 +87,14 @@
 			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array>
-			<array>
-				<integer>9223372036854775807</integer>
-			</array>
-		</array>
+		<array/>
 		<key>Opened Steps</key>
 		<array>
 			<integer>5</integer>
 		</array>
 		<key>Visible StackLayout Views</key>
 		<array>
-			<string>back</string>
+			<string>front</string>
 		</array>
 	</dict>
 </dict>

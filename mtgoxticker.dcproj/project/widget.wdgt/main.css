@@ -171,12 +171,12 @@ body {
     margin-top: 0px;
     font-size: 16px;
     text-align: left;
-    left: 136px;
+    left: 122px;
     top: 92px;
-    right: 22px;
     width: auto;
-    bottom: 192px;
     height: auto;
+    right: 22px;
+    bottom: 192px;
 }
 
 .selected #ticker_last {
@@ -191,12 +191,12 @@ body {
     margin-top: 0px;
     font-size: 16px;
     text-align: left;
-    left: 136px;
+    left: 122px;
     top: 113px;
-    right: 22px;
     width: auto;
-    bottom: 171px;
     height: auto;
+    right: 22px;
+    bottom: 171px;
 }
 
 .selected #ticker_high {
@@ -211,12 +211,12 @@ body {
     margin-top: 0px;
     font-size: 16px;
     text-align: left;
-    left: 136px;
+    left: 122px;
     top: 133px;
-    right: 22px;
     width: auto;
-    bottom: 151px;
     height: auto;
+    right: 23px;
+    bottom: 151px;
 }
 
 .selected #ticker_low {
@@ -231,12 +231,12 @@ body {
     margin-top: 0px;
     font-size: 16px;
     text-align: left;
-    left: 136px;
+    left: 122px;
     top: 154px;
-    right: 22px;
     width: auto;
-    bottom: 130px;
     height: auto;
+    right: 22px;
+    bottom: 130px;
 }
 
 .selected #ticker_buy {
@@ -251,12 +251,12 @@ body {
     margin-top: 0px;
     font-size: 16px;
     text-align: left;
-    left: 136px;
+    left: 122px;
     top: 176px;
-    right: 22px;
     width: auto;
-    bottom: 108px;
     height: auto;
+    right: 23px;
+    bottom: 108px;
 }
 
 .selected #ticker_sell {
@@ -271,12 +271,12 @@ body {
     margin-top: 0px;
     font-size: 16px;
     text-align: left;
-    left: 136px;
+    left: 122px;
     top: 198px;
-    right: 27px;
     width: auto;
-    bottom: 86px;
     height: auto;
+    right: 22px;
+    bottom: 86px;
 }
 
 .selected #ticker_volume {
