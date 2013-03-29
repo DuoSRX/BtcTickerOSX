@@ -130,15 +130,14 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
-    margin-top: 0px;
     font-size: 16px;
     text-align: center;
     left: 129px;
-    top: 87px;
     width: 75px;
     height: 20px;
     text-shadow: rgb(0, 0, 0) 0px 2px 4px;
     color: rgb(255, 255, 255);
+    top: 90px;
 }
 
 .selected #ticker_low {
