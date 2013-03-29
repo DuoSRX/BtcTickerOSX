@@ -4,47 +4,92 @@
  according to the license.txt file included in the project.
  */
 
-var tickerUrl = "http://data.mtgox.com/code/data/ticker.php";
-var tickerRequest = null;
 var tickerValues = {
     high: 0,
     low: 0,
-    vol: 0,
+    volume: 0,
     buy: 0,
     sell: 0,
-    last: 0
+    last: 0,
+    currency: "usd"
 };
 
-function refreshTickerValues()
-{
-    if (tickerRequest != null) {
-        tickerRequest.abort();
-        tickerRequest = null;
-    }
-    tickerRequest = new XMLHttpRequest();
-    
-    tickerRequest.onload = function(e) {  
-        var data = JSON.parse(tickerRequest.responseText);
-        tickerValues = data.ticker;
-        showTickerValues();
-        
-        tickerRequest = null;
-    }
-    
-    tickerRequest.open("GET", tickerUrl);
-    tickerRequest.setRequestHeader("Cache-Control", "no-cache");
-    
-    tickerRequest.send(null);
+var currencies = {
+    usd: "$",
+    cad: "$",
+    gbp: "£",
+    eur: "€",
+    btc: "฿",
+    jpn: "¥"
 }
 
-function showTickerValues()
-{
-    document.getElementById('ticker_high').innerHTML = tickerValues.high;
-    document.getElementById('ticker_low').innerHTML = tickerValues.low;
-    document.getElementById('ticker_last').innerHTML = tickerValues.last;
-    document.getElementById('ticker_volume').innerHTML = tickerValues.vol;
-    document.getElementById('ticker_buy').innerHTML = tickerValues.buy;
-    document.getElementById('ticker_sell').innerHTML = tickerValues.sell;
+var sources = {
+    mtGoxUsd: {
+        name: "Mt. Gox USD",
+        url: "https://data.mtgox.com/api/2/BTCUSD/money/ticker",
+        fetchMethod: getMtGox
+    },
+    mtGoxCad: {
+        name: "Mt. Gox CAD",
+        url: "https://data.mtgox.com/api/2/BTCCAD/money/ticker",
+        fetchMethod: getMtGox
+    }
+};
+
+function getMtGox(url, callback) {
+    $.getJSON(url, function(json) {
+        callback({
+            last: json.data.last.value,
+            high: json.data.high.value,
+            low: json.data.low.value,
+            buy: json.data.buy.value,
+            sell: json.data.sell.value,
+            volume: json.data.vol.value,
+            currency: json.data.high.currency,
+            timestamp: json.data.now
+        });
+    });
+}
+
+function formatNumber(value, decimalPlaces) {
+    parts = value.toString().split('.');
+    if (decimalPlaces === 0) {
+        return parts[0];
+    }
+    return parts[0] + "." + parts[1].substring(0, decimalPlaces);
+}
+
+function formatCurrency(value) {
+    symbol = currencies[tickerValues.currency.toLowerCase()];
+    return symbol + formatNumber(value, 2);
+}
+
+function refreshTickerValues() {
+    var key = widget.preferenceForKey("sourceKey");
+    if (!key) {
+        key = $("#sourcePopup").val();
+    }
+    var source = sources[key];
+    source.fetchMethod(source.url, function(data) {
+        _.extend(tickerValues, data);
+        showTickerValues();
+    });
+}
+
+function showTickerValues() {
+    $('#ticker_high').html(formatCurrency(tickerValues.high));
+    $('#ticker_low').html(formatCurrency(tickerValues.low));
+    $('#ticker_last').html(formatCurrency(tickerValues.last));
+    $('#ticker_volume').html(formatNumber(tickerValues.volume, 0));
+    $('#ticker_buy').html(formatCurrency(tickerValues.buy));
+    $('#ticker_sell').html(formatCurrency(tickerValues.sell));
+}
+
+function populateSourcePicker() {
+    var sourcePopup = $("#sourcePopup");
+    _.each(sources, function(source, key) {
+        $("<option>").text(source.name).attr("value", key).appendTo(sourcePopup);
+    });
 }
 
 //
@@ -54,6 +99,13 @@ function showTickerValues()
 function load()
 {
     dashcode.setupParts();
+
+    populateSourcePicker();
+    $("#sourcePopup").change(function() {
+        widget.setPreferenceForKey($(this).val(), "sourceKey");
+        refreshTickerValues();
+    }).val(widget.preferenceForKey("sourceKey"));
+
     refreshTickerValues();
 }
 
@@ -65,7 +117,6 @@ function remove()
 {
     // Stop any timers to prevent CPU usage
     // Remove any preferences as needed
-    // widget.setPreferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
 }
 
 //
