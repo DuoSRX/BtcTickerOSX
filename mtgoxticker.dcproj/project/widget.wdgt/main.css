@@ -329,13 +329,13 @@ body {
     position: absolute;
     margin-top: 0px;
     left: 37px;
-    top: 138px;
-    right: 38px;
+    top: 40px;
     width: auto;
-    bottom: 109px;
     height: auto;
     color: rgb(153, 153, 153);
     text-align: center;
+    right: 38px;
+    bottom: 207px;
 }
 
 .selected #text6 {
@@ -353,5 +353,37 @@ body {
     left: 37px;
     width: 144px;
     height: 30px;
-    top: 204px;
+    top: 106px;
+}
+
+#sourcePopup {
+    font-family: HelveticaNeue-Bold;
+    font-size: 12px;
+    text-align: left;
+    width: 182px;
+    height: auto;
+    position: absolute;
+    left: 21px;
+    top: 216px;
+    right: auto;
+    margin-top: 0px;
+    bottom: 64px;
+}
+
+#text7 {
+    font-size: 13px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 21px;
+    top: 192px;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.selected #text7 {
+    color: white;
 }
