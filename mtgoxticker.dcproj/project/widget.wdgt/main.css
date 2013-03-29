@@ -5,18 +5,8 @@
  */
 
 body {
-    margin: 0px;
-}
-
-#frontImg {
-    position: absolute;
-    display: block;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: auto;
-    height: auto;
+    margin: 0px auto;
+    width: 500px;
 }
 
 #info {
@@ -25,8 +15,8 @@ body {
     bottom: 18px;
     width: 13px;
     height: 13px;
-    top: auto;
-    left: auto;
+    top: 99px;
+    left: 300px;
 }
 
 #back {
@@ -52,77 +42,21 @@ body {
     margin-top: auto;
 }
 
-#backDevelopedWith {
-    position: absolute;
-    width: 150px;
-    height: 49px;
-    left: 37px;
-    top: 58px;
-    margin-right: auto;
-}
-
-#text {
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    font-size: 16px;
-    left: 28px;
-    top: 92px;
-    width: auto;
-    height: auto;
-}
-
-.selected #text {
-    color: white;
-}
-
-#text1 {
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    font-size: 16px;
-    left: 28px;
-    top: 113px;
-    width: auto;
-    height: auto;
-}
-
-.selected #text1 {
-    color: white;
-}
-
-#text2 {
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    font-size: 16px;
-    left: 28px;
-    top: 133px;
-    width: auto;
-    height: auto;
-}
-
-.selected #text2 {
-    color: white;
-}
-
 #text3 {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: 'Helvetica Neue';
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    font-size: 16px;
-    left: 28px;
-    top: 154px;
-    width: auto;
-    height: auto;
+    font-size: 14px;
+    left: 211px;
+    top: 46px;
+    width: 45px;
+    height: 20px;
+    text-shadow: rgb(128, 128, 128) 0px 1px 1px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    line-height: 16px;
 }
 
 .selected #text3 {
@@ -130,53 +64,41 @@ body {
 }
 
 #text4 {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: 'Helvetica Neue';
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    font-size: 16px;
-    left: 28px;
-    top: 176px;
-    width: auto;
-    height: auto;
+    font-size: 14px;
+    left: 211px;
+    top: 68px;
+    width: 45px;
+    height: 20px;
+    text-shadow: rgb(128, 128, 128) 0px 1px 1px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    line-height: 16px;
 }
 
 .selected #text4 {
     color: white;
 }
 
-#text5 {
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    font-size: 16px;
-    left: 28px;
-    top: 198px;
-    width: auto;
-    height: auto;
-}
-
-.selected #text5 {
-    color: white;
-}
-
 #ticker_last {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: HelveticaNeue-Medium;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    font-size: 16px;
-    text-align: left;
-    left: 122px;
-    top: 92px;
-    width: auto;
-    height: auto;
-    right: 22px;
-    bottom: 192px;
+    font-size: 28px;
+    text-align: center;
+    left: 118px;
+    top: 52px;
+    width: 97px;
+    height: 29px;
+    text-shadow: rgb(0, 0, 0) 0px 2px 4px;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
 }
 
 .selected #ticker_last {
@@ -184,19 +106,19 @@ body {
 }
 
 #ticker_high {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: HelveticaNeue-Light;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     font-size: 16px;
-    text-align: left;
-    left: 122px;
-    top: 113px;
-    width: auto;
-    height: auto;
-    right: 22px;
-    bottom: 171px;
+    text-align: center;
+    left: 129px;
+    top: 26px;
+    width: 75px;
+    height: 20px;
+    text-shadow: rgb(0, 0, 0) 0px 2px 4px;
+    color: rgb(255, 255, 255);
 }
 
 .selected #ticker_high {
@@ -204,19 +126,19 @@ body {
 }
 
 #ticker_low {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: HelveticaNeue-Light;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     font-size: 16px;
-    text-align: left;
-    left: 122px;
-    top: 133px;
-    width: auto;
-    height: auto;
-    right: 23px;
-    bottom: 151px;
+    text-align: center;
+    left: 129px;
+    top: 87px;
+    width: 75px;
+    height: 20px;
+    text-shadow: rgb(0, 0, 0) 0px 2px 4px;
+    color: rgb(255, 255, 255);
 }
 
 .selected #ticker_low {
@@ -224,19 +146,19 @@ body {
 }
 
 #ticker_buy {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: HelveticaNeue-Light;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     font-size: 16px;
-    text-align: left;
-    left: 122px;
-    top: 154px;
-    width: auto;
-    height: auto;
-    right: 22px;
-    bottom: 130px;
+    text-align: right;
+    left: 239px;
+    top: 46px;
+    width: 63px;
+    height: 20px;
+    text-shadow: rgb(0, 0, 0) 0px 2px 4px;
+    color: rgb(191, 191, 191);
 }
 
 .selected #ticker_buy {
@@ -244,71 +166,90 @@ body {
 }
 
 #ticker_sell {
-    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-family: HelveticaNeue-Light;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     font-size: 16px;
-    text-align: left;
-    left: 122px;
-    top: 176px;
-    width: auto;
-    height: auto;
-    right: 23px;
-    bottom: 108px;
+    text-align: right;
+    left: 239px;
+    top: 68px;
+    width: 63px;
+    height: 20px;
+    text-shadow: rgb(0, 0, 0) 0px 2px 4px;
+    color: rgb(191, 191, 191);
 }
 
 .selected #ticker_sell {
     color: white;
 }
 
-#ticker_volume {
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    font-size: 16px;
-    text-align: left;
-    left: 122px;
-    top: 198px;
-    width: auto;
-    height: auto;
-    right: 22px;
-    bottom: 86px;
-}
-
-.selected #ticker_volume {
-    color: white;
-}
-
-#updateButton {
-    font-family: HelveticaNeue-Bold;
-    font-size: 12px;
-    text-align: center;
-    cursor: default;
-    -khtml-user-select: none;
-    position: absolute;
-    margin-top: 0px;
-    width: 60px;
-    left: 82px;
-    height: 25px;
-    top: 239px;
-}
-
-#image {
-    width: 180px;
-    height: 37px;
+#textarea {
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
     position: absolute;
     right: auto;
     bottom: auto;
     margin-top: 0px;
-    left: 22px;
-    top: 29px;
+    left: 166px;
+    width: 142px;
+    height: 30px;
+    top: 22px;
+    background-color: rgba(255, 255, 255, 0.246094);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.496094);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-#inner_image {
+#sourcePopup {
+    font-family: HelveticaNeue-Bold;
+    font-size: 12px;
+    text-align: left;
+    width: 182px;
+    height: auto;
+    position: absolute;
+    left: 21px;
+    top: 97px;
+    right: auto;
+    margin-top: 0px;
+    bottom: 86px;
+}
+
+#text7 {
+    font-size: 13px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 21px;
+    top: 75px;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.selected #text7 {
+    color: white;
+}
+
+#image1 {
+    width: 322px;
+    height: 122px;
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+}
+
+#inner_image1 {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -321,69 +262,36 @@ body {
     height: auto;
 }
 
-#text6 {
-    font-size: 13px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    left: 37px;
-    top: 40px;
+#frontImg {
     width: auto;
     height: auto;
-    color: rgb(153, 153, 153);
-    text-align: center;
-    right: 38px;
-    bottom: 207px;
 }
 
-.selected #text6 {
-    color: white;
+#front {
+    width: auto;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-height: 0px;
 }
 
-#textarea {
-    color: black;
-    font-family: HelveticaNeue;
-    font-size: 10pt;
-    position: absolute;
-    right: auto;
-    bottom: auto;
-    margin-top: 0px;
-    left: 37px;
-    width: 144px;
-    height: 30px;
-    top: 106px;
-}
-
-#sourcePopup {
-    font-family: HelveticaNeue-Bold;
+#text1 {
     font-size: 12px;
-    text-align: left;
-    width: 182px;
-    height: auto;
-    position: absolute;
-    left: 21px;
-    top: 216px;
-    right: auto;
-    margin-top: 0px;
-    bottom: 64px;
-}
-
-#text7 {
-    font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: auto;
-    height: auto;
+    width: 132px;
+    height: 36px;
     position: absolute;
     left: 21px;
-    top: 192px;
+    top: 22px;
     margin-top: 0px;
     color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 0px;
+    line-height: 16px;
 }
 
-.selected #text7 {
+.selected #text1 {
     color: white;
 }

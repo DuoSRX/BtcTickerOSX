@@ -4,6 +4,4 @@
  however it is recommended to first turn off the Dashcode 
  code generator otherwise the changes will be lost.
  */
-var dashcodeDataSources = {
-    "dataSource": { "Class": "DC.AjaxController" }
-};
+var dashcodeDataSources = {};
