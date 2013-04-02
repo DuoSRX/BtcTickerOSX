@@ -82,6 +82,8 @@ function showTickerValues() {
     $('#ticker_last').html(formatCurrency(tickerValues.last));
     $('#ticker_buy').html(formatNumber(tickerValues.buy, 2));
     $('#ticker_sell').html(formatNumber(tickerValues.sell, 2));
+    $('#buyLabel').html(getLocalizedString('buy'));
+    $('#sellLabel').html(getLocalizedString('sell'));
 }
 
 function populateSourcePicker() {
@@ -135,6 +137,7 @@ function show()
 {
     // Restart any timers that were stopped on hide
     refreshTickerValues();
+    $('#done div').innerText(getLocalizedString('done'));
 }
 
 //

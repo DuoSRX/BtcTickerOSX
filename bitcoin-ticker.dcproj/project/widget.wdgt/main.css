@@ -42,7 +42,7 @@ body {
     margin-top: auto;
 }
 
-#text3 {
+#buyLabel {
     font-family: 'Helvetica Neue';
     text-overflow: ellipsis;
     overflow: hidden;
@@ -64,11 +64,11 @@ body {
     margin-left: 0px;
 }
 
-.selected #text3 {
+.selected #buyLabel {
     color: white;
 }
 
-#text4 {
+#sellLabel {
     font-family: 'Helvetica Neue';
     text-overflow: ellipsis;
     overflow: hidden;
@@ -87,7 +87,7 @@ body {
     margin-left: 0px;
 }
 
-.selected #text4 {
+.selected #sellLabel {
     color: white;
 }
 
