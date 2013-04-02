@@ -15,4 +15,4 @@ If you'd like to see more data sources added than what is currently available, p
 
 ## Installation
 
-Download the zip version and double click the .wdgt file to install it in your dashboard.
+Open the project in Dashcode, select Run & Share in the left sidebar and click the Deploy to Dashboard button. Dashcode is available from the [Downloads for Apple Developers](https://developer.apple.com/downloads/index.action) page. It's free of charge but an Apple Developer account is required.
