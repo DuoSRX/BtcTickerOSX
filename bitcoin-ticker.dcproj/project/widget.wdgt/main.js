@@ -33,6 +33,11 @@ var sources = {
         name: "Mt. Gox CAD",
         url: "https://data.mtgox.com/api/2/BTCCAD/money/ticker",
         fetchMethod: getMtGox
+    },
+    mtGoxEur: {
+        name: "Mt. Gox EUR",
+        url: "https://data.mtgox.com/api/2/BTCEUR/money/ticker",
+        fetchMethod: getMtGox
     }
 };
 
