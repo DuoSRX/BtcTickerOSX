@@ -35,6 +35,8 @@
 		<string>localhost.default</string>
 		<key>Path</key>
 		<string>mtgoxticker</string>
+		<key>Save</key>
+		<true/>
 		<key>SavePath</key>
 		<string>/Users/duosrx/Desktop</string>
 		<key>enableSimulation</key>
@@ -55,7 +57,7 @@
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>199 90 1096 742 0 0 1440 878 </string>
+	<string>46 129 1096 742 0 0 1440 878 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -87,12 +89,7 @@
 			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array>
-			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-			</array>
-		</array>
+		<array/>
 		<key>Opened Steps</key>
 		<array>
 			<integer>5</integer>
