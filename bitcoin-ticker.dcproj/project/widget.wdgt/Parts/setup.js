@@ -5,10 +5,10 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
+    "backImage": { "view": "DC.ImageLayout" },
     "buyLabel": { "text": "buy", "view": "DC.Text" },
-    "donationLabel": { "text": "Consider donating to my Bitcoin wallet:", "view": "DC.Text" },
     "done": { "onclick": "showFront", "text": "done" },
-    "image1": { "view": "DC.ImageLayout" },
+    "frontImage": { "view": "DC.ImageLayout" },
     "info": { "backgroundStyle": "white", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "sellLabel": { "text": "sell", "view": "DC.Text" },
     "sourceLabel": { "text": "Source:", "view": "DC.Text" },
@@ -18,6 +18,7 @@ var dashcodePartSpecs = {
     "ticker_low": { "text": "80.91", "view": "DC.Text" },
     "ticker_sell": { "text": "80.00", "view": "DC.Text" }
 };
+
 
 
 

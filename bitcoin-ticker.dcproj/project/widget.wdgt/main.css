@@ -23,17 +23,6 @@ body {
     display: none;
 }
 
-#backImg {
-    position: absolute;
-    display: block;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    width: auto;
-    height: auto;
-}
-
 .black {
     background-color: rgb(54, 54, 54);
     background-image: -webkit-linear-gradient(top, rgb(68, 68, 68), rgb(34, 34, 34));
@@ -75,10 +64,10 @@ body {
 
 #done {
     position: absolute;
-    bottom: 21px;
+    bottom: 26px;
     width: 50px;
     height: 25px;
-    right: 21px;
+    right: 16px;
 }
 
 #done:active {
@@ -237,27 +226,6 @@ body {
     color: white;
 }
 
-#textarea {
-    color: rgb(255, 255, 255);
-    font-family: HelveticaNeue;
-    font-size: 10pt;
-    position: absolute;
-    right: auto;
-    bottom: auto;
-    margin-top: 0px;
-    left: 166px;
-    width: 142px;
-    height: 30px;
-    top: 22px;
-    background-color: rgba(255, 255, 255, 0.246094);
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.496094);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
 #sourcePopup {
     -khtml-appearance: none;
     font-size: 12px;
@@ -265,8 +233,8 @@ body {
     width: 182px;
     height: 25px;
     position: absolute;
-    left: 21px;
-    bottom: 21px;
+    left: 23px;
+    bottom: 26px;
 }
 
 #sourceLabel {
@@ -277,17 +245,17 @@ body {
     width: auto;
     height: auto;
     position: absolute;
-    left: 21px;
-    top: 70px;
+    left: 26px;
+    top: 65px;
     margin-top: 0px;
-    color: rgb(227, 227, 227);
+    color: rgb(142, 142, 142);
 }
 
 .selected #sourceLabel {
     color: white;
 }
 
-#image1 {
+#frontImage {
     width: 322px;
     height: 122px;
     position: absolute;
@@ -324,23 +292,31 @@ body {
     min-height: 0px;
 }
 
-#donationLabel {
-    font-size: 12px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 132px;
-    height: 36px;
+#backImage {
+    width: 322px;
+    height: 122px;
     position: absolute;
-    left: 21px;
-    top: 22px;
+    left: 6px;
+    top: 8px;
+    right: auto;
+    bottom: auto;
     margin-top: 0px;
-    color: rgb(227, 227, 227);
-    text-align: right;
-    padding: 0px;
-    line-height: 16px;
 }
 
-.selected #donationLabel {
-    color: white;
+#inner_image {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#backImg {
+    width: auto;
+    height: auto;
 }
