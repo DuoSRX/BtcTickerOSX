@@ -137,7 +137,7 @@ function show()
 {
     // Restart any timers that were stopped on hide
     refreshTickerValues();
-    $('#done div').innerText(getLocalizedString('done'));
+    $('#done').text(getLocalizedString('done'));
 }
 
 //
