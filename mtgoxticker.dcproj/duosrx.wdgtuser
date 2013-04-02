@@ -5,11 +5,11 @@
 	<key>Breakpoints</key>
 	<dict>
 		<key>widget.wdgt/main.js:24</key>
-		<string>-refreshTickerValues</string>
+		<string>-</string>
 		<key>widget.wdgt/main.js:27</key>
-		<string>-refreshTickerValues</string>
-		<key>widget.wdgt/main.js:37</key>
-		<string>-refreshTickerValues</string>
+		<string>-</string>
+		<key>widget.wdgt/main.js:42</key>
+		<string>-</string>
 	</dict>
 	<key>CYLastWindowPosition</key>
 	<string>{-250, -519}</string>
@@ -87,14 +87,19 @@
 			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array/>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
+		</array>
 		<key>Opened Steps</key>
 		<array>
 			<integer>5</integer>
 		</array>
 		<key>Visible StackLayout Views</key>
 		<array>
-			<string>front</string>
+			<string>back</string>
 		</array>
 	</dict>
 </dict>
