@@ -238,7 +238,7 @@ body {
 }
 
 #textarea {
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: HelveticaNeue;
     font-size: 10pt;
     position: absolute;
@@ -251,7 +251,7 @@ body {
     top: 22px;
     background-color: rgba(255, 255, 255, 0.246094);
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.496094);
+    border-color: rgba(0, 0, 0, 0.496094);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -280,7 +280,7 @@ body {
     left: 21px;
     top: 70px;
     margin-top: 0px;
-    color: rgb(255, 255, 255);
+    color: rgb(227, 227, 227);
 }
 
 .selected #sourceLabel {
@@ -335,7 +335,7 @@ body {
     left: 21px;
     top: 22px;
     margin-top: 0px;
-    color: rgb(255, 255, 255);
+    color: rgb(227, 227, 227);
     text-align: right;
     padding: 0px;
     line-height: 16px;
