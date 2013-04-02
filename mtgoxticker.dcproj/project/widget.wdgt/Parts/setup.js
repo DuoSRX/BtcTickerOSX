@@ -15,6 +15,7 @@ var dashcodePartSpecs = {
     "text4": { "text": "Sell", "view": "DC.Text" },
     "text5": { "text": "Volume", "view": "DC.Text" },
     "text6": { "text": "If you like my widget, consider donating to this bitcoin wallet :)", "view": "DC.Text" },
+    "text7": { "text": "Source:", "view": "DC.Text" },
     "ticker_buy": { "text": "1.23456", "view": "DC.Text" },
     "ticker_high": { "text": "1.23456", "view": "DC.Text" },
     "ticker_last": { "text": "1.23456", "view": "DC.Text" },
