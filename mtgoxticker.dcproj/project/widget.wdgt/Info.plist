@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>Untitled</string>
+	<string>Bitcoin</string>
 	<key>CFBundleIdentifier</key>
 	<string>ca.brandonevans.widget.bitcointicker</string>
 	<key>CFBundleName</key>
