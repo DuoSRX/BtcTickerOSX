@@ -102,8 +102,7 @@ function populateSourcePicker() {
 // Function: load()
 // Called by HTML body element's onload event when the widget is ready to start
 //
-function load()
-{
+function load() {
     dashcode.setupParts();
 
     populateSourcePicker();
@@ -111,16 +110,13 @@ function load()
         widget.setPreferenceForKey($(this).val(), "sourceKey");
         refreshTickerValues();
     }).val(widget.preferenceForKey("sourceKey"));
-
-    refreshTickerValues();
 }
 
 //
 // Function: remove()
 // Called when the widget has been removed from the Dashboard
 //
-function remove()
-{
+function remove() {
     // Stop any timers to prevent CPU usage
     // Remove any preferences as needed
 }
@@ -129,8 +125,7 @@ function remove()
 // Function: hide()
 // Called when the widget has been hidden
 //
-function hide()
-{
+function hide() {
     // Stop any timers to prevent CPU usage
 }
 
@@ -138,8 +133,7 @@ function hide()
 // Function: show()
 // Called when the widget has been shown
 //
-function show()
-{
+function show() {
     // Restart any timers that were stopped on hide
     refreshTickerValues();
     $('#done').text(getLocalizedString('done'));
@@ -149,8 +143,7 @@ function show()
 // Function: sync()
 // Called when the widget has been synchronized with .Mac
 //
-function sync()
-{
+function sync() {
     // Retrieve any preference values that you need to be synchronized here
     // Use this for an instance key's value:
     // instancePreferenceValue = widget.preferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
@@ -165,8 +158,7 @@ function sync()
 //
 // event: onClick event from the info button
 //
-function showBack(event)
-{
+function showBack(event) {
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
@@ -188,8 +180,7 @@ function showBack(event)
 //
 // event: onClick event from the done button
 //
-function showFront(event)
-{
+function showFront(event) {
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
@@ -202,6 +193,7 @@ function showFront(event)
 
     if (window.widget) {
         setTimeout('widget.performTransition();', 0);
+        refreshTickerValues();
     }
 }
 
@@ -210,10 +202,4 @@ if (window.widget) {
     widget.onhide = hide;
     widget.onshow = show;
     widget.onsync = sync;
-}
-
-
-function onUpdateButtonClick(event)
-{
-    refreshTickerValues();
 }
