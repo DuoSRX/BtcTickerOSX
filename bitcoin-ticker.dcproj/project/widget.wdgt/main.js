@@ -24,6 +24,11 @@ var currencies = {
 }
 
 var sources = {
+    bitstampUSD: {
+        name: "Bitstamp USD",
+        url: "https://www.bitstamp.net/api/ticker/",
+        fetchMethod: getBitstamp
+    },
     coinbaseUSD: {
         name: "Coinbase USD",
         url: {  spot : "https://coinbase.com/api/v1/prices/spot_rate",
@@ -48,16 +53,32 @@ var sources = {
     }
 };
 
+// added by @Enzese
+function getBitstamp(url, callback) {
+    $.getJSON(url, function(json) {
+        callback({
+            last: json.last,
+            high: json.high,
+            low: json.low,
+            buy: json.bid,
+            sell: json.ask,
+            volume: json.volume,
+            currency: 'USD',
+            timestamp: json.timestamp
+        });
+    });
+}
+
+// added by @Enzese
 function getCoinbase(url, callback) {
     var results = {
-            last: '',
-            high: '',
-            low: '',
-            buy: '',
-            sell: '',
-            currency: 'USD',
-            timestamp: new Date().getTime()
-    }
+        last: '',
+        high: '',
+        low: '',
+        buy: '',
+        sell: '',
+        currency: 'usd'
+    };
     // get buy amount
     $.getJSON(url.buy, function(json) {
         results.buy = json.amount;
