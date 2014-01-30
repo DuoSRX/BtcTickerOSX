@@ -12,12 +12,13 @@ var dashcodePartSpecs = {
     "info": { "backgroundStyle": "white", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "sellLabel": { "text": "sell", "view": "DC.Text" },
     "sourceLabel": { "text": "Source:", "view": "DC.Text" },
-    "ticker_buy": { "text": "81.00", "view": "DC.Text" },
-    "ticker_high": { "text": "81.08", "view": "DC.Text" },
-    "ticker_last": { "text": "$80.91", "view": "DC.Text" },
-    "ticker_low": { "text": "80.91", "view": "DC.Text" },
-    "ticker_sell": { "text": "80.00", "view": "DC.Text" }
+    "ticker_buy": { "text": "999.00", "view": "DC.Text" },
+    "ticker_high": { "text": "1001.00", "view": "DC.Text" },
+    "ticker_last": { "text": "$1000.00", "view": "DC.Text" },
+    "ticker_low": { "text": "999.00", "view": "DC.Text" },
+    "ticker_sell": { "text": "1000.00", "view": "DC.Text" }
 };
+
 
 
 
