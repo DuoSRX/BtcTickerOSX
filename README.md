@@ -17,4 +17,10 @@ If you'd like to see more data sources added than what is currently available, p
 
 ## Installation
 
+.wdgt files are available on the [releases](https://github.com/interstateone/bitcoin-widget/releases) page to install directly onto your Dashboard.
+
+## Development
+
 Open the project in Dashcode, select Run & Share in the left sidebar and click the Deploy to Dashboard button. Dashcode is available from the [Downloads for Apple Developers](https://developer.apple.com/downloads/index.action) page. It's free of charge but an Apple Developer account is required.
+
+Dashcode will fail to launch normally as of OS X 10.9 Mavericks. It's still possible to launch it by navigating to `Dashcode.app/Contents/MacOS/` and double clicking on the Dashcode executable, but there are other issues that remain.
