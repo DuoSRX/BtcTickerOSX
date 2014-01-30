@@ -33,13 +33,13 @@ body {
     line-height: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 0px;
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
     vertical-align: middle;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.0976563) rgba(0, 0, 0, 0.0976563) rgba(0, 0, 0, 0.246094);
-    -webkit-box-shadow: rgba(255, 255, 255, 0.199219) 0px 1px 0px inset, rgba(0, 0, 0, 0.0429688) 0px 1px 2px;
-    box-shadow: rgba(255, 255, 255, 0.199219) 0px 1px 0px inset, rgba(0, 0, 0, 0.0429688) 0px 1px 2px;
+    border-color: rgba(0, 0, 0, 0.0980392) rgba(0, 0, 0, 0.0980392) rgba(0, 0, 0, 0.247059);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.0431373) 0px 1px 2px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.0431373) 0px 1px 2px;
     cursor: default;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -53,9 +53,9 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(34, 34, 34);
     text-decoration: none;
+    transition: background-position 0.1s linear;
     -khtml-transition: background-position 0.1s linear;
     background-position: 0px -15px;
-    transition: background-position 0.1s linear;
 }
 
 .black:active, .black:focus {
@@ -72,7 +72,7 @@ body {
 
 #done:active {
     background-image: none;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 0px 2px 4px inset, rgba(0, 0, 0, 0.0429688) 0px 1px 2px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.14902) 0px 2px 4px inset, rgba(0, 0, 0, 0.0431373) 0px 1px 2px;
 }
 
 #buyLabel {
@@ -133,12 +133,12 @@ body {
     font-size: 28px;
     text-align: center;
     top: 52px;
-    width: 110px;
+    width: 133px;
     height: 29px;
     text-shadow: rgb(0, 0, 0) 0px 2px 4px;
     color: rgb(255, 255, 255);
     line-height: 28px;
-    left: 111px;
+    left: 98px;
     right: auto;
     margin-left: 0px;
 }

@@ -24,6 +24,18 @@ var currencies = {
 }
 
 var sources = {
+    bitstampUSD: {
+        name: "Bitstamp USD",
+        url: "https://www.bitstamp.net/api/ticker/",
+        fetchMethod: getBitstamp
+    },
+    coinbaseUSD: {
+        name: "Coinbase USD",
+        url: {  spot : "https://coinbase.com/api/v1/prices/spot_rate",
+                buy: "https://coinbase.com/api/v1/prices/buy", 
+                sell: "https://coinbase.com/api/v1/prices/sell" },
+        fetchMethod: getCoinbase
+    },
     mtGoxUsd: {
         name: "Mt. Gox USD",
         url: "https://data.mtgox.com/api/2/BTCUSD/money/ticker",
@@ -41,6 +53,49 @@ var sources = {
     }
 };
 
+// added by @Enzese
+function getBitstamp(url, callback) {
+    $.getJSON(url, function(json) {
+        callback({
+            last: json.last,
+            high: json.high,
+            low: json.low,
+            buy: json.bid,
+            sell: json.ask,
+            volume: json.volume,
+            currency: 'USD',
+            timestamp: json.timestamp
+        });
+    });
+}
+
+// added by @Enzese
+function getCoinbase(url, callback) {
+    var results = {
+        last: '',
+        high: '',
+        low: '',
+        buy: '',
+        sell: '',
+        currency: 'usd'
+    };
+    // get buy amount
+    $.getJSON(url.buy, function(json) {
+        results.buy = json.amount;
+
+        // get sell amount
+        $.getJSON(url.sell, function(json) {
+            results.sell = json.amount;
+                
+            // get spot amount 
+            $.getJSON(url.spot, function(json) {
+                results.last = json.amount;
+                callback(results);
+            });
+        });
+    });
+}
+
 function getMtGox(url, callback) {
     $.getJSON(url, function(json) {
         callback({
@@ -57,11 +112,15 @@ function getMtGox(url, callback) {
 }
 
 function formatNumber(value, decimalPlaces) {
-    parts = value.toString().split('.');
-    if (decimalPlaces === 0) {
-        return parts[0];
+    if (value) {
+        parts = value.toString().split('.');
+        if (decimalPlaces === 0) {
+            return parts[0];
+        }
+        return parts[0] + "." + parts[1].substring(0, decimalPlaces);
+    } else {
+        return "";
     }
-    return parts[0] + "." + parts[1].substring(0, decimalPlaces);
 }
 
 function formatCurrency(value) {
@@ -70,11 +129,13 @@ function formatCurrency(value) {
 }
 
 function refreshTickerValues() {
-    var key = widget.preferenceForKey("sourceKey");
-    if (!key) {
+    var key = widget.preferenceForKey("sourceKey"),
+        source = sources[key];
+
+    if (!key || !source) {
         key = $("#sourcePopup").val();
     }
-    var source = sources[key];
+
     source.fetchMethod(source.url, function(data) {
         _.extend(tickerValues, data);
         showTickerValues();
