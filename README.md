@@ -1,13 +1,15 @@
 bitcoin-widget
 ============
 
+![](http://cl.ly/image/0n0s110d3D1c/Screenshot%202014-01-29%2020.29.21.png)
+
 bitcoin-widget is a simple OSX dashboard widget that displays data from these sources:
 
  - Mt. Gox USD
  - Mt. Gox CAD 
  - Mt. Gox EUR
-
-![](http://f.cl.ly/items/1l1X2w0n3D0m1R2W3X3l/Screen%20Shot%202013-03-29%20at%201.58.18%20PM.png)
+ - Coinbase USD
+ - Bitstamp USD
 
 ## Sources
 
