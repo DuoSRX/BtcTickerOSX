@@ -10,6 +10,7 @@ bitcoin-widget is a simple OSX dashboard widget that displays data from these so
  - Mt. Gox EUR
  - Coinbase USD
  - Bitstamp USD
+ - BTC-e USD
 
 ## Sources
 
