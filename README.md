@@ -18,7 +18,7 @@ If you'd like to see more data sources added than what is currently available, p
 
 ## Installation
 
-.wdgt files are available on the [releases](releases) page to install directly onto your Dashboard.
+.wdgt files are available on the [releases](../../releases) page to install directly onto your Dashboard.
 
 ## Development
 
