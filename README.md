@@ -10,6 +10,7 @@ bitcoin-widget is a simple OSX dashboard widget that displays data from these so
  - Mt. Gox EUR
  - Coinbase USD
  - Bitstamp USD
+ - BTC-e USD
 
 ## Sources
 
@@ -17,7 +18,7 @@ If you'd like to see more data sources added than what is currently available, p
 
 ## Installation
 
-.wdgt files are available on the [releases](https://github.com/interstateone/bitcoin-widget/releases) page to install directly onto your Dashboard.
+.wdgt files are available on the [releases](../../releases) page to install directly onto your Dashboard.
 
 ## Development
 

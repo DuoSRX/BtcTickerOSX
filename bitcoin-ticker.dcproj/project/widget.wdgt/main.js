@@ -24,6 +24,11 @@ var currencies = {
 }
 
 var sources = {
+    btceUSD: {
+        name: "BTC-e USD",
+        url: "https://btc-e.com/api/2/btc_usd/ticker",
+        fetchMethod: getBtcE
+    },
     bitstampUSD: {
         name: "Bitstamp USD",
         url: "https://www.bitstamp.net/api/ticker/",
@@ -52,6 +57,22 @@ var sources = {
         fetchMethod: getMtGox
     }
 };
+
+// added by @alexius2
+function getBtcE(url, callback) {
+    $.getJSON(url, function(json) {
+        callback({
+            last: json.ticker.last,
+            high: json.ticker.high,
+            low: json.ticker.low,
+            buy: json.ticker.buy,
+            sell: json.ticker.sell,
+            volume: json.ticker.vol_cur,
+            currency: 'USD',
+            timestamp: json.ticker.updated
+        });
+    });
+}
 
 // added by @Enzese
 function getBitstamp(url, callback) {
@@ -113,11 +134,7 @@ function getMtGox(url, callback) {
 
 function formatNumber(value, decimalPlaces) {
     if (value) {
-        parts = value.toString().split('.');
-        if (decimalPlaces === 0) {
-            return parts[0];
-        }
-        return parts[0] + "." + parts[1].substring(0, decimalPlaces);
+        return Number(value).toFixed(decimalPlaces);
     } else {
         return "";
     }
